@@ -8,7 +8,7 @@ export const getAllUserAsync = createAsyncThunk('getAllUserAsync', async () => {
         let headers = {
             Authorization: `Bearer ${accessToken}`
         }
-        return await axios.get('http://localhost:8080/userdata', { headers })
+        return await axios.get('https://login-page-be-render.onrender.com/userdata', { headers })
             .then((res) => {
                 console.log(res.data["data"])
                 return res.data["data"]

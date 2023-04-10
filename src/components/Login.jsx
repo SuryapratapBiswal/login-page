@@ -16,7 +16,7 @@ const Login = () => {
         setFormData({ ...formData, [name]: value })
     }
     const loginUser = () => {
-        fetch("http://localhost:8080/login", {
+        fetch("https://login-page-be-render.onrender.com/login", {
             method: "POST",
             crossDomain: true,
             headers: {

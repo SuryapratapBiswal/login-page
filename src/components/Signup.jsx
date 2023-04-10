@@ -20,7 +20,7 @@ const Signup = () => {
         setFormData(initialValues)
     }
     const addUser = () => {
-        fetch("http://localhost:8080/signup", {
+        fetch("https://login-page-be-render.onrender.com/signup", {
             method: "POST",
             crossDomain: true,
             headers: {
